@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+			body {
+				margin: 0;
+				background-color: lightgray;
+				font-size: 12pt;
+			}
+			h1 {
+				font-size: 23pt;
+				margin: 0;
+			}
+			h3 {
+				font-size: 18pt;
+				margin: 0;
+				font-weight: 400;
+			}
+			ul {
+				margin: 0;
+				padding-left: 24px;
+			}
+			a {
+				text-decoration: none;
+			}
+			div {
+				text-align: justify;
+			}
+			.container {
+				padding: 2.5cm 2cm;
+				margin: 0 auto;
+				background-color: white;
+				width: 21cm;
+			}
+			.general-info {
+				padding: 0.25cm 0.5cm;
+				background-color: #C2D5EC;
+				display: flex;
+			}
+			.general-info > div {
+				display: flex;
+				flex: 1;
+				flex-direction: column;
+				justify-content: center;
+			}
+			.general-info-detail {
+				align-items: flex-end;
+			}
+			.block {
+				margin-top: 64px;
+			}
+			.block-title {
+				font-size: 18pt;
+				font-weight: 700;
+			}
+			.block-subtitle {
+				font-size: 14pt;
+				font-weight: 700;
+			}
+			.block-grid {
+				display: grid;
+				grid-template-columns: max-content 1fr;
+				gap: 0px 16px;
+			}
+			.line {
+				margin: 3px 0;
+				grid-column: 1 / -1;
+				height: 1px;
+				background-color: #A4C1E2;
+			}
+			ul > .line {
+				margin-left: -16px;
+			}
+			.block-row {
+				display: flex;
+				flex-direction: row;
+				gap: 16px;
+			}
+			.block-col {
+				display: flex;
+				flex-direction: column;
+			}
+			.items-end {
+				align-items: flex-end;
+			}
+			.flex-1{
+				flex: 1;
+			}
+			@media print {
+				body {
+					background-color: white;
+				}
+				.container {
+					padding: 0;
+				}
+				@page {
+					margin: 2.5cm 2cm
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="general-info">
+				<div>
+					<h1>Nguyen Trong Ruong</h1>
+					<h3>Software Developer</h3>
+				</div>
+				<div class="general-info-detail">
+					<div>Address: Cat Que, Hoai Duc, Ha Noi</div>
+					<div>Phone number: 0972074537</div>
+					<div>Email: <a href="mailto:trongruong99@gmail.com">trongruong99@gmail.com</a></div>
+					<div>GitHub: <a href="https://github.com/ruong32" target="_blank">https://github.com/ruong32</a></div>
+					<div>LeetCode: <a href="https://leetcode.com/ruong32" target="_blank">https://leetcode.com/ruong32</a></div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block-title">About</div>
+				<div class="line"></div>
+				<div class="block-row">By far, I am a 3-year-experience programmer with good English skills. Throughout the course of my professional journey, I have worked as Frontend developer with solid knowledge about JavaScript, HTML, CSS and amazing powerful frontend library, which is React. Furthermore, I also have been employed as Backend developer with certain knowledge about frameworks (Spring Boot, Express), databases (MySQL, MongoDB) and REST API design.</div>
+			</div>
+			<div class="block">
+				<div class="block-title">Education</div>
+				<div class="line"></div>
+				<div class="block-row">
+					<div>
+						<div><b>University of Engineering & Technology (VNU-UET)</b></div>
+						<div>Faculty of Information Technology</div>						
+					</div>
+					<div class="block-col items-end flex-1">
+						<div>From 08/2017 to 06/2022</div>
+						<div>Graduate time: 06/2022</div>						
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block-title">Experience</div>
+				<div class="line"></div>
+				<div class="block-grid">
+					<div>10/2022 - Present</div>
+					<div class="flex-1">
+						<div class="block-subtitle">Frontend developer</div>
+						<div>Coc Coc, 8th floor, ICON4 building, No.243A, La Thanh street, Dong Da, Ha Noi</div>
+						<ul>
+							<li>Maintaining Savior extention which allows users to download videos on Coc Coc browser. Mainly using Javascript.</li>
+							<li>Maintaining Newtab - a startup page which is shown when users open a new tab on Coc Coc browser. Mainly using HTML, CSS and Javascript.</li>
+							<li>Developing Quizz web site using React and Next.js.</li>
+							<li>Maintaining Referral web site using React and Next.js.</li>
+						</ul>
+					</div>
+					<div class="line"></div>
+					<div>05/2021 - 09/2022</div>
+					<div class="flex-1">
+						<div class="block-subtitle">Full Stack developer</div>
+						<div>Alo, No.69, Vu Trong Phung street, Thanh Xuan Trung, Thanh Xuan, Ha Noi</div>
+						<ul>
+							<li>Developing REST APIs for Alo app and Alo web admin to manage data using Vert.x with MySQL database.</li>
+							<li>Developing UI for admin web using React.</li>
+							<li>Developing UI for client web using Next.js and React.</li>
+							<li>Developing an MVC web for Customer Service using MySQL for database, SpringBoot for backend and Thymeleaf for frontend.</li>
+							<li>Deploying frontend, backend to server and setting up environment for testing.</li>
+						</ul>
+					</div>
+					<div class="line"></div>
+					<div>06/2020 - 04/2021</div>
+					<div class="flex-1">
+						<div class="block-subtitle">Backend developer</div>
+						<div>Viettel Solution, No 1, Tran Huu Duc street, My Dinh, Tu Liem, Ha Noi</div>
+						<ul>
+							<li>Developing backend for web application using Spring Boot framework and frontend using Angular.</li>
+							<li>Using Docker to deploy applications.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block-title">Technical skill</div>
+				<div class="line"></div>
+				<div class="block-row">
+					<div class="block-col items-end">
+						<div>Programming language</div>
+						<div>Framework/Library</div>
+						<div>Database</div>
+						<div>Tool</div>
+					</div>
+					<div class="block-col flex-1">
+						<div>Java, JavaScript, TypeScript, HTML, CSS</div>
+						<div>Spring Boot, Express, React Native, Angular, React, Next.js, Vert.x</div>
+						<div>MySQL, MongoDB</div>
+						<div>Git, Docker, IntelliJ, Visual Studio Code, Terminal</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block-title">Project</div>
+				<div class="line"></div>
+				<div class="block-grid">
+					<div class="block-subtitle">Persional project</div>
+					<ul>
+						<li>
+							<div><b>8/2023 - Present: <a href="http://62.171.155.43:3000" target="_blank">Grammar Check</a></b></div>
+							<div><b>Technologies:</b> React, NextJS, Tailwind.</div>
+							<div><b>Team size:</b> 1 members.</div>
+							<div><b>Description:</b> A page to help users improve their English writing by giving better sentences but keeping main idea.</div>
+							<div><b>Position:</b> Frontend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Developing text areas to type input and display result with copy and delete buttons.</li>
+									<li>Highlighting respective sentences in two text areas.</li>
+									<li>Developing popup to show synonyms in result area and replace original word by one of the synonyms.</li>
+									<li>Developing zoom feature without zooming entire browser.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>7/2022 - 8/2022: <a href="https://passodesign.com" target="_blank">Passo</a></b></div>
+							<div><b>Technologies:</b> React, NextJS.</div>
+							<div><b>Team size:</b> 1 members.</div>
+							<div><b>Description:</b> A landing page to introduce business and their products (banners, design templates). It is also a media to connect to potential customers.</div>
+							<div><b>Position:</b> Fullstack developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Developing pages bases on given design.</li>
+									<li>Supportint responsive.</li>
+									<li>Building a simple backend service to send email.</li>
+									<li>Deploying to hosting service.</li>
+									<li>Installing SSL certificate.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="line"></div>
+					<div class="block-subtitle">Business project</div>
+					<ul>
+						<li>
+							<div><b>10/2022 - 9/2023: <a href="https://referral.coccoc.com" target="_blank">Coc Coc - Referral</a></b></div>
+							<div><b>Technologies:</b> React, NextJS, SASS.</div>
+							<div><b>Team size:</b> 3 members.</div>
+							<div><b>Description:</b> Coc Coc's content web page where users can track their sharing Coc Coc campaigns and their commission.</div>
+							<div><b>Position:</b> Frontend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Updating new UI in user information, payment method, commission history, withdraw history tab.</li>
+									<li>Maintaining.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>10/2022 - 9/2023: <a href="https://quizz.coccoc.com" target="_blank">Coc Coc - Quizz</a></b></div>
+							<div><b>Technologies:</b> React, NextJS, Tailwind.</div>
+							<div><b>Team size:</b> 3 members.</div>
+							<div><b>Description:</b> Coc Coc's content web page where users can play quizzes.</div>
+							<div><b>Position:</b> Frontend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Developing category screen, detail quiz screen and playing quiz screen.</li>
+									<li>Implementing share quiz's result to Facebook feature.</li>
+									<li>Supporting old browsers.</li>
+									<li>Maintaining.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>10/2022 - 9/2023: Coc Coc - Newtab</b></div>
+							<div><b>Technologies:</b> HTML, CSS, Stylus, Webpack, JavaScript.</div>
+							<div><b>Team size:</b> 3 members.</div>
+							<div><b>Description:</b> Coc Coc's web page appeared when user open new tab on Coc Coc browser.</div>
+							<div><b>Position:</b> Frontend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Implementing new account popup.</li>
+									<li>Implementing new setting panel and widgets UI.</li>
+									<li>Maintaining.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>10/2022 - 9/2023: Coc Coc - Savior</b></div>
+							<div><b>Technologies:</b> HTML, CSS, Stylus, Webpack, JavaScript.</div>
+							<div><b>Team size:</b> 3 members.</div>
+							<div><b>Description:</b> Coc Coc's extension that helps users download videos on Coc Coc browser.</div>
+							<div><b>Position:</b> Frontend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Implementing downloading videos on TikTok without watermark feature.</li>
+									<li>Maintaining, usually when target websites changed their domain or web structure.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>6/2021 - 10/2022: Alo</b></div>
+							<div><b>Technologies:</b> Vert.x, Mysql, React, Next.js.</div>
+							<div><b>Team size:</b> 8 members.</div>
+							<div><b>Description:</b> A mobile application has a mission that brings to people high quality services.</div>
+							<div><b>Position:</b> Fullstack developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Building APIs which allow users to be able to interact (booking, contacting to service providers,...) with the system and assist administrators to manage the system.</li>
+									<li>Building a website for administrators and a website for SEO.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>11/2020 - 4/2021: Intelligent Video Analysis</b></div>
+							<div><b>Technologies:</b> Spring Boot, Angular, MariaDB, Jenkins, SonarQube, Kubernetes.</div>
+							<div><b>Team size:</b> 6 members.</div>
+							<div><b>Description:</b> A client page for users to demonstrate AI features such as face recognizing, face comparing,... and these features’ document.</div>
+							<div><b>Position:</b> Fullstack developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Building APIs allowing the admin to manage AI document and service to store files. Using Eureka and Spring Cloud Gateway to implement microservice architecture and Docker to deploy applications.</li>
+									<li>Building a page to display document, a page header with dynamic items and a drag drop image component. Integrating backend's API with frontend.</li>
+									<li>Using Jenkins, Gitlab for CICD.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>6/2020 - 10/2020: Viettel Open Digital Platform</b></div>
+							<div><b>Technologies:</b> Spring Boot, Angular, MariaDB, Jenkins, SonarQube, Kubernetes.</div>
+							<div><b>Team size:</b> 6 members.</div>
+							<div><b>Description:</b> An admin page for managing products in eShop (another system of Viettel). Its main function is synchronizing products between BCCS and eShop in multiple languages.</div>
+							<div><b>Position:</b> Backend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Building APIs allowing admin to manage catalogs and products which can be shown or not on eShop.</li>
+									<li>Providing APIs which eShop can get catalogs and products from.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+					<div class="line"></div>
+					<div class="block-subtitle">Educational project</div>
+					<ul>
+						<li>
+							<div><b>2/2020 - 6/2020: <a href="https://github.com/ruong32/INT3120-2020.git">TOEIC Test</a> (Developing mobile application)</b></div>
+							<div><b>Technologies:</b> JavaScript, React Native, SQLite.</div>
+							<div><b>Team size:</b> 2 members.</div>
+							<div><b>Description:</b> An application helping users prepare for TOEIC exam by providing sample tests. Otherwise it also helps users learn English by using tags which contain pictures, meaning, and pronunciation of English words.</div>
+							<div><b>Position:</b> Mobile developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Coding learning screens which contain tags, favorite word and reminder function.</li>
+									<li>Implementing dark mode.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>2/2020 - 6/2020: <a href="https://github.com/ruong32/FHQmusic.git" target="_blank">FHQ Music</a> (User interface design)</b></div>
+							<div><b>Technologies:</b> JavaScript, React Native, SQLite.</div>
+							<div><b>Team size:</b> 2 members.</div>
+							<div><b>Description:</b> A music application streaming audio online. Main functions: streaming music, mini player, playlist, adding songs to list, favorite songs, listening history, searching songs.</div>
+							<div><b>Position:</b> Mobile developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Designing home page.</li>
+									<li>Handling streaming audio on player and minimizing it to mini player.</li>
+									<li>Coding adding song, favorite song, listening history function.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>8/2019 - 12/2019: <a href="https://github.com/ruong32/Web_chat_application.git" target="_blank">Web Chat</a> (Developing web application)</b></div>
+							<div><b>Technologies:</b> JavaScript, NodeJS, Express, EJS, Socket.IO, MongoDB.</div>
+							<div><b>Team size:</b> 4 members.</div>
+							<div><b>Description:</b> A real-time chat application providing abilities to login with Facebook and Google, verify email, add friends, real-time chat with friends, create group chat, emoji, share images and videos.</div>
+							<div><b>Position:</b> Backend developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Handling real-time chat, group chat, sharing media functions.</li>
+									<li>Developing UI for chat page.</li>
+								</ul>
+							</div>
+						</li>
+						<div class="line"></div>
+						<li>
+							<div><b>8/2018 - 12/2018: <a href="https://github.com/ruong32/dict.git" target="_blank">Dictionary</a> (Oriented Object Programming)</b></div>
+							<div><b>Technologies:</b> Java, Java Swing.</div>
+							<div><b>Team size:</b> 2 members.</div>
+							<div><b>Description:</b> A simple dictionary for PC can translate from Vietnamese word to English word. Supporting English pronunciation.</div>
+							<div><b>Position:</b> Developer.</div>
+							<div>
+								<b>Responsibilities:</b>
+								<ul>
+									<li>Building UI using Java Swing.</li>
+									<li>Combining UI and logic.</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="block">
+				<div class="block-title">Certificate</div>
+				<div class="line"></div>
+				<div class="block-row">
+					<div>
+						<div><b>TOEIC</b></div>
+						<div>22/03/2021 - 22/03/2023</div>
+					</div>
+					<div>770</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
