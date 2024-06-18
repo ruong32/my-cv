@@ -4,8 +4,7 @@
 
 * {
   box-sizing: border-box;
-  cursor: default;
-  transition: color .15s, background-color .15s, border-color .15s;
+  transition: color .1s, background-color .1s, border-color .1s;
 }
 
 .no-scrollbar::-webkit-scrollbar {

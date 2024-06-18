@@ -1,13 +1,14 @@
-export { default as Menu } from './Menu'
-export { default as Mail } from './Mail'
-export { default as Phone } from './Phone'
-export { default as MapMarker } from './MapMarker'
-export { default as Download } from './Download'
-export { default as Facebook } from './Facebook'
-export { default as Messenger } from './Messenger'
-export { default as Github } from './Github'
-export { default as Linkedin } from './Linkedin'
-export { default as API } from './API'
-export { default as BuildingWebsite } from './BuildingWebsite'
-export { default as Database } from './Database'
-export { default as Documentation } from './Documentation'
+export { Menu } from "./menu";
+export { Mail } from "./mail";
+export { Phone } from "./phone";
+export { MapMarker } from "./map-marker";
+export { Download } from "./download";
+export { Facebook } from "./facebook";
+export { Messenger } from "./messenger";
+export { Github } from "./github";
+export { Linkedin } from "./linkedin";
+export { API } from "./api";
+export { BuildingWebsite } from "./building-website";
+export { Database } from "./database";
+export { Documentation } from "./documentation";
+export { Loading } from "./loading";
