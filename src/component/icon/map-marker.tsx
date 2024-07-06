@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export const MapMarker = (props: SVGProps<SVGSVGElement>) => {
+export const MapMarkerIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       width='24'

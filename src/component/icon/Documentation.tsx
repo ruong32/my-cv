@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export const Documentation = (props: SVGProps<SVGSVGElement>) => {
+export const DocumentationIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg fill='none' height='24' width='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' {...props}>
       <path

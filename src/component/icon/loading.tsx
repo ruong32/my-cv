@@ -1,7 +1,7 @@
 import { cx } from '@/helper'
 import { SVGProps } from 'react'
 
-export const Loading = ({ className, ...props }: SVGProps<SVGSVGElement>) => {
+export const LoadingIcon = ({ className, ...props }: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       className={cx('animate-spin', className)}

@@ -1,5 +1,13 @@
 import { Image, LinkButton } from '@/component'
-import { Facebook, Github, Linkedin, Mail, MapMarker, Messenger, Phone } from '@/component/icon'
+import {
+  FacebookIcon,
+  GithubIcon,
+  LinkedinIcon,
+  MailIcon,
+  MapMarkerIcon,
+  MessengerIcon,
+  PhoneIcon
+} from '@/component/icon'
 
 export const Introduction = () => {
   return (
@@ -21,29 +29,29 @@ export const Introduction = () => {
         <h1 className='mt-4 text-center text-3xl font-semibold md:text-left md:text-4xl'>Ruong Nguyen Trong</h1>
         <h2 className='mt-4 text-center text-xl md:text-left md:text-2xl'>Software developer</h2>
         <div className='mt-10 flex items-center justify-center text-sm text-gray-600 dark:text-gray-300 md:justify-start md:text-base'>
-          <Mail height={24} width={24} />
+          <MailIcon height={24} width={24} />
           <span className='ml-2'>trongruong99@gmail.com</span>
         </div>
         <div className='mt-4 flex items-center justify-center text-sm text-gray-600 dark:text-gray-300 md:justify-start md:text-base'>
-          <Phone height={24} width={24} />
+          <PhoneIcon height={24} width={24} />
           <span className='ml-2'>+84 97 207 45 37</span>
         </div>
         <div className='mt-4 flex items-center justify-center text-sm text-gray-600 dark:text-gray-300 md:justify-start md:text-base'>
-          <MapMarker height={24} width={24} />
+          <MapMarkerIcon height={24} width={24} />
           <span className='ml-2'>Ha Noi, Vietnam</span>
         </div>
         <div className='mt-10 flex justify-center gap-8 md:justify-start'>
           <LinkButton href='https://www.facebook.com/ruong32'>
-            <Facebook />
+            <FacebookIcon />
           </LinkButton>
           <LinkButton href='https://m.me/ruong32'>
-            <Messenger />
+            <MessengerIcon />
           </LinkButton>
           <LinkButton href='https://github.com/ruong32'>
-            <Github />
+            <GithubIcon />
           </LinkButton>
           <LinkButton href='https://www.linkedin.com/in/ruong32'>
-            <Linkedin />
+            <LinkedinIcon />
           </LinkButton>
         </div>
       </div>

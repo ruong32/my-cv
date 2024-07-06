@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export const Linkedin = (props: SVGProps<SVGSVGElement>) => {
+export const LinkedinIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg width='24' height='24' viewBox='0 0 24 24' fill='currentColor' xmlns='http://www.w3.org/2000/svg' {...props}>
       <path d='M6.5 8C7.32843 8 8 7.32843 8 6.5C8 5.67157 7.32843 5 6.5 5C5.67157 5 5 5.67157 5 6.5C5 7.32843 5.67157 8 6.5 8Z' />

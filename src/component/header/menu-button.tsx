@@ -1,7 +1,7 @@
 'use client'
 
 import { Image, NavLink } from '@/component'
-import { Menu } from '@/component/icon'
+import { MenuIcon } from '@/component/icon'
 import { cx } from '@/helper'
 import { useEffect, useState } from 'react'
 
@@ -22,7 +22,7 @@ const MenuButton = () => {
 
   return (
     <div className='select-none lg:hidden'>
-      <Menu className='cursor-pointer lg:hidden' onClick={() => setOpeningSideMenu(true)} />
+      <MenuIcon className='cursor-pointer lg:hidden' onClick={() => setOpeningSideMenu(true)} />
       <div
         data-opening={openingSideMenu}
         className={cx(

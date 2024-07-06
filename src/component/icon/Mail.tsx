@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export const Mail = (props: SVGProps<SVGSVGElement>) => {
+export const MailIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg fill='currentColor' height='24' width='24' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48' {...props}>
       <path

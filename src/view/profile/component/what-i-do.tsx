@@ -1,5 +1,5 @@
 import { Card } from '@/component'
-import { API, BuildingWebsite, Database } from '@/component/icon'
+import { APIIcon, BuildingWebsiteIcon, DatabaseIcon } from '@/component/icon'
 
 export const WhatIDo = () => {
   return (
@@ -8,19 +8,19 @@ export const WhatIDo = () => {
       <div className='mt-8 flex flex-col items-center justify-center gap-8 md:flex-row md:items-stretch lg:gap-12'>
         <Card
           className='w-[220px] flex-1 md:w-auto'
-          icon={<BuildingWebsite height={80} width={80} />}
+          icon={<BuildingWebsiteIcon height={80} width={80} />}
           title='Build website UI'
           description='Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur distinctio nisi consequatur ducimus voluptates eum repudiandae earum saepe laborum qui.'
         />
         <Card
           className='w-[220px] flex-1 md:w-auto'
-          icon={<API height={80} width={80} />}
+          icon={<APIIcon height={80} width={80} />}
           title='Create API'
           description='Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, obcaecati.'
         />
         <Card
           className='w-[220px] flex-1 md:w-auto'
-          icon={<Database height={80} width={80} />}
+          icon={<DatabaseIcon height={80} width={80} />}
           title='Design database'
           description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, consequatur veniam. Itaque eligendi animi delectus. Optio nulla expedita asperiores perspiciatis doloribus mollitia officia veritatis, recusandae dolorem. Cumque ducimus similique molestiae!'
         />

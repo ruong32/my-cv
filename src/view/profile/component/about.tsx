@@ -1,5 +1,5 @@
 import { Button, Image, Tag } from '@/component'
-import { Download, Documentation } from '@/component/icon'
+import { DownloadIcon, DocumentationIcon } from '@/component/icon'
 import Link from 'next/link'
 
 export const About = () => {
@@ -27,12 +27,12 @@ export const About = () => {
         </div>
         <div className='flex justify-center space-x-2 md:justify-start'>
           <Link href='asset/Nguyen Trong Ruong.pdf' target='_blank' download>
-            <Button className='mx-auto mt-6 md:mx-0' leftIcon={<Download className='mr-2' />}>
+            <Button className='mx-auto mt-6 md:mx-0' leftIcon={<DownloadIcon className='mr-2' />}>
               Download CV
             </Button>
           </Link>
-          <Link href='asset/cv.html' target='_blank'>
-            <Button color='green' className='mx-auto mt-6 md:mx-0' leftIcon={<Documentation className='mr-2' />}>
+          <Link href='/cv'>
+            <Button color='green' className='mx-auto mt-6 md:mx-0' leftIcon={<DocumentationIcon className='mr-2' />}>
               View CV
             </Button>
           </Link>

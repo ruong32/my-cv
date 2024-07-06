@@ -3,7 +3,7 @@
 import { THEME, THEME_KEY } from '@/common'
 import { cx } from '@/helper'
 import React from 'react'
-import { Loading } from '@/component/icon'
+import { LoadingIcon } from '@/component/icon'
 
 const ThemeChanger = () => {
   const [theme, setTheme] = React.useState<THEME>()
@@ -17,7 +17,7 @@ const ThemeChanger = () => {
     <button className='relative h-8 w-8 overflow-hidden rounded-full' title='Switch to other theme'>
       {theme === undefined ? (
         <div className='grid place-items-center'>
-          <Loading className='h-5 w-5 text-blue-400' />
+          <LoadingIcon className='h-5 w-5 text-blue-400' />
         </div>
       ) : (
         <div

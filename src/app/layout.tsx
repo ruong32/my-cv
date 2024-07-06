@@ -37,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           }}
         />
       </head>
-      <body className={cx(inter.className, 'bg-slate-200 text-neutral-950 dark:bg-neutral-900 dark:text-white')}>
+      <body className={cx(inter.className, 'bg-slate-50 text-neutral-950 dark:bg-neutral-900 dark:text-white')}>
         <Header />
         <main className='pt-[68px]'>{children}</main>
       </body>

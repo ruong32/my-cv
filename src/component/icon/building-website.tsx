@@ -1,6 +1,6 @@
 import { SVGProps } from 'react'
 
-export const BuildingWebsite = (props: SVGProps<SVGSVGElement>) => {
+export const BuildingWebsiteIcon = (props: SVGProps<SVGSVGElement>) => {
   return (
     <svg
       fill='currentColor'
