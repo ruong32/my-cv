@@ -1,5 +1,5 @@
-import { Container, FadeInSection } from "@/component";
-import { About, Experience, Introduction, WhatIDo } from "./component";
+import { Container, FadeInSection } from '@/component'
+import { About, Experience, Introduction, WhatIDo } from './component'
 
 const ProfileView = async () => {
   return (
@@ -17,7 +17,7 @@ const ProfileView = async () => {
         <Experience />
       </FadeInSection>
     </Container>
-  );
-};
+  )
+}
 
-export default ProfileView;
+export default ProfileView

@@ -1,5 +1,5 @@
-import BlogView from "@/view/blog";
+import BlogView from '@/view/blog'
 
 export default function Home() {
-  return <BlogView />;
+  return <BlogView />
 }

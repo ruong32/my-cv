@@ -1,6 +1,6 @@
-import { Container } from '@/component';
-import { Tags } from './tags';
-import { MiniProfile } from './mini-profile';
+import { Container } from '@/component'
+import { Tags } from './tags'
+import { MiniProfile } from './mini-profile'
 
 const BlogView = async () => {
   return (
@@ -13,7 +13,7 @@ const BlogView = async () => {
         <MiniProfile />
       </div>
     </Container>
-  );
-};
+  )
+}
 
-export default BlogView;
+export default BlogView

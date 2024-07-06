@@ -3,7 +3,7 @@ module.exports = {
   content: [
     './src/view/**/*.{js,ts,jsx,tsx,mdx}',
     './src/component/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   darkMode: 'class',
   theme: {
@@ -18,42 +18,42 @@ module.exports = {
       '4xl': ['36px', '40px'],
       '5xl': ['48px', '1'],
       '6xl': ['60px', '1'],
-      '7xl': ['72px', '1'],
+      '7xl': ['72px', '1']
     },
     extend: {
       keyframes: {
         'fade-in-up': {
           '0%': {
-            'opacity': 0,
-            'top': '10vh'
+            opacity: 0,
+            top: '10vh'
           },
           '100%': {
-            'opacity': 1,
-            'top': '0'
+            opacity: 1,
+            top: '0'
           }
         }
       }
-    },
+    }
   },
   plugins: [
     require('tailwindcss-animate'),
     function ({ addBase, theme }) {
       function extractColorVars(colorObj, colorGroup = '') {
         return Object.keys(colorObj).reduce((vars, colorKey) => {
-          const value = colorObj[colorKey];
+          const value = colorObj[colorKey]
 
           const newVars =
             typeof value === 'string'
               ? { [`--color${colorGroup}-${colorKey}`]: value }
-              : extractColorVars(value, `-${colorKey}`);
+              : extractColorVars(value, `-${colorKey}`)
 
-          return { ...vars, ...newVars };
-        }, {});
+          return { ...vars, ...newVars }
+        }, {})
       }
 
       addBase({
-        ':root': extractColorVars(theme('colors')),
-      });
-    },
-  ],
+        ':root': extractColorVars(theme('colors'))
+      })
+    }
+  ]
 }
