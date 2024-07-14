@@ -4,8 +4,13 @@ import { CHANGE_THEME_EVENT, THEME, THEME_KEY } from '@/common'
 import { cx } from '@/helper'
 import React from 'react'
 import { LoadingIcon } from '@/component/icon'
+import { twMerge } from 'tailwind-merge'
 
-const ThemeChanger = () => {
+type Props = {
+  className?: string
+}
+
+const ThemeChanger = ({ className }: Props) => {
   const [theme, setTheme] = React.useState<THEME>()
 
   React.useLayoutEffect(() => {
@@ -30,7 +35,10 @@ const ThemeChanger = () => {
   }
 
   return (
-    <button className='relative h-8 w-8 overflow-hidden rounded-full' title='Switch to other theme'>
+    <button
+      className={twMerge('relative h-8 w-8 overflow-hidden rounded-full', className)}
+      title='Switch to other theme'
+    >
       {theme === undefined ? (
         <div className='grid place-items-center'>
           <LoadingIcon className='h-5 w-5 text-blue-400' />
