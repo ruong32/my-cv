@@ -1,6 +1,7 @@
 import { Container, NotionPage } from '@/component'
 import { notionAPI } from '@/services/notion'
 import { redirect } from 'next/navigation'
+import { PrintButton } from './print-button'
 
 const CvView = async () => {
   const pageId = process.env.MY_CV_PAGE_ID
@@ -10,7 +11,8 @@ const CvView = async () => {
   const page = await notionAPI.getPage(pageId)
   return (
     <Container>
-      <NotionPage recordMap={page} />
+      <PrintButton />
+      <NotionPage className='my-cv' recordMap={page} />
     </Container>
   )
 }
