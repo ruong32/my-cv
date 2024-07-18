@@ -24,7 +24,7 @@ export const Header = () => {
             <NavLink href='/' label='Blog' />
             <NavLink href='/me' label='About' />
           </div>
-          <ThemeChanger className='mr-5 lg:mr-10' />
+          <ThemeChanger className='mr-5 lg:mr-0' />
           <MenuButton />
         </div>
       </Container>
