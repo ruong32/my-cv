@@ -4,7 +4,7 @@ import { NotionRenderer } from 'react-notion-x'
 import { ExtendedRecordMap } from 'notion-types'
 import 'react-notion-x/src/styles.css'
 import dynamic from 'next/dynamic'
-import { CHANGE_THEME_EVENT, THEME, THEME_KEY } from '@/common'
+import { THEME, THEME_KEY } from '@/common'
 import { useOnChangeTheme } from '@/hooks/use-on-change-theme'
 
 const Code = dynamic(() => import('react-notion-x/build/third-party/code').then((m) => m.Code))
@@ -17,7 +17,12 @@ const Modal = dynamic(() => import('react-notion-x/build/third-party/modal').the
   ssr: false
 })
 
-export function NotionPage({ recordMap }: { recordMap: ExtendedRecordMap }) {
+type Props = {
+  className?: string
+  recordMap: ExtendedRecordMap
+}
+
+export function NotionPage({ className, recordMap }: Props) {
   const [isDark, setIsDark] = React.useState(false)
   React.useLayoutEffect(() => {
     const currentTheme: THEME = (localStorage.getItem(THEME_KEY) as THEME) || THEME.light
@@ -39,6 +44,7 @@ export function NotionPage({ recordMap }: { recordMap: ExtendedRecordMap }) {
 
   return (
     <NotionRenderer
+      className={className}
       recordMap={recordMap}
       fullPage
       darkMode={isDark}
