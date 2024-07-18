@@ -2,13 +2,48 @@
 
 import { Button } from '@/component'
 import { PrinterIcon } from '@/component/icon'
+import dynamic from 'next/dynamic'
+import { ExtendedRecordMap } from 'notion-types'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { NotionRenderer } from 'react-notion-x'
 
-export const PrintButton = () => {
+const Code = dynamic(() => import('react-notion-x/build/third-party/code').then((m) => m.Code))
+const Collection = dynamic(() => import('react-notion-x/build/third-party/collection').then((m) => m.Collection))
+const Equation = dynamic(() => import('react-notion-x/build/third-party/equation').then((m) => m.Equation))
+const Pdf = dynamic(() => import('react-notion-x/build/third-party/pdf').then((m) => m.Pdf), {
+  ssr: false
+})
+const Modal = dynamic(() => import('react-notion-x/build/third-party/modal').then((m) => m.Modal), {
+  ssr: false
+})
+
+type Props = {
+  className?: string
+  recordMap: ExtendedRecordMap
+}
+
+export const PrintButton = ({ className, recordMap }: Props) => {
+  const cvMemo = React.useMemo(
+    () => (
+      <NotionRenderer
+        recordMap={recordMap}
+        fullPage
+        components={{
+          Code,
+          Collection,
+          Equation,
+          Modal,
+          Pdf
+        }}
+      />
+    ),
+    [recordMap]
+  )
+
   const print = () => {
-    const toBePrintedElement = document.querySelector('.my-cv')
-    if (!toBePrintedElement) {
-      return
-    }
+    const cvRootElement = document.createElement('div')
+    ReactDOM.createRoot(cvRootElement).render(cvMemo)
     const printWindow = window.open()
     if (!printWindow) {
       return
@@ -16,14 +51,14 @@ export const PrintButton = () => {
     const style = document.createElement('style')
     style.innerHTML = notionCSS
     printWindow.document.head.append(style)
-    printWindow.document.body.append(toBePrintedElement.cloneNode(true) as HTMLElement)
+    printWindow.document.body.append(cvRootElement as HTMLElement)
     setTimeout(() => {
       printWindow.print()
       printWindow.close()
     }, 100)
   }
   return (
-    <Button className='fixed right-5 top-[5.5rem]' onClick={print}>
+    <Button className={className} onClick={print}>
       <PrinterIcon className='mr-1' /> Print
     </Button>
   )

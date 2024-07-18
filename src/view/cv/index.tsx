@@ -11,8 +11,8 @@ const CvView = async () => {
   const page = await notionAPI.getPage(pageId)
   return (
     <Container>
-      <PrintButton />
-      <NotionPage className='my-cv' recordMap={page} />
+      <PrintButton className='fixed right-5 top-[5.5rem] z-50' recordMap={page} />
+      <NotionPage recordMap={page} />
     </Container>
   )
 }
