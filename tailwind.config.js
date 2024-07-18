@@ -21,6 +21,9 @@ module.exports = {
       '7xl': ['72px', '1']
     },
     extend: {
+      fontFamily: {
+        pacifico: ['Pacifico']
+      },
       keyframes: {
         'fade-in-up': {
           '0%': {

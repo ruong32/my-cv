@@ -21,8 +21,8 @@ export const Header = () => {
         </div>
         <div className='flex items-center'>
           <div className='mr-5 hidden space-x-10 text-base lg:mr-10 lg:flex'>
-            <NavLink href='/' label='Blog' />
-            <NavLink href='/me' label='About' />
+            <NavLink href='/blog' label='Blog' />
+            <NavLink href='/about' label='About' />
           </div>
           <ThemeChanger className='mr-5 lg:mr-0' />
           <MenuButton />

@@ -47,7 +47,7 @@ const MenuButton = () => {
           </div>
           <NavLink
             className={cx('px-4 py-3 transition-colors duration-300 md:px-8', 'hover:bg-orange-500 hover:text-white')}
-            href='/'
+            href='/blog'
             label='Blog'
             onClick={() => {
               setOpeningSideMenu(false)
@@ -55,7 +55,7 @@ const MenuButton = () => {
           />
           <NavLink
             className={cx('px-4 py-3 transition-colors duration-300 md:px-8', 'hover:bg-orange-500 hover:text-white')}
-            href='/me'
+            href='/about'
             label='About'
             onClick={() => {
               setOpeningSideMenu(false)
