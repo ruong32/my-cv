@@ -51,6 +51,7 @@ export const PrintButton = ({ className, recordMap }: Props) => {
     const style = document.createElement('style')
     style.innerHTML = notionCSS
     printWindow.document.head.append(style)
+    printWindow.document.title = 'Ruong Nguyen Trong'
     printWindow.document.body.append(cvRootElement as HTMLElement)
     setTimeout(() => {
       printWindow.print()
