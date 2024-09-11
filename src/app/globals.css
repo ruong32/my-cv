@@ -8,6 +8,14 @@
   box-sizing: border-box;
 }
 
+hr {
+  border-width: 1px;
+}
+
+.dark hr {
+  border-color: #87837848;
+}
+
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
