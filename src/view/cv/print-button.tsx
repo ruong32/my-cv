@@ -68,6 +68,7 @@ export const PrintButton = ({ className, recordMap }: Props) => {
 const notionCSS = `
 @page {
   margin: 2cm 2cm 2cm 2cm; 
+  size: A4;
 }
 header.notion-header {
   display: none;
